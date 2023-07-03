@@ -9,10 +9,15 @@ export function HomePage() {
     }, [])
     return (
       <>
-  <div className="facebook-feed">
+      <div className="container">
+      <div className="logo">
+        <img src="logo" alt="logo" />
+      </div>
+      <div className="facebook-feed">
     <div className="left-panel">
       <div className="profile">
-        <img className="profile-picture" src="profile-picture.jpg"></img>
+      <div className="profile-picture">
+        <img src="profile-picture.jpg"></img>
         <h3 className="profile-name">John Doe</h3>
       </div>
       <div className="popular-posts">
@@ -28,6 +33,7 @@ export function HomePage() {
             <a href="#" className="post-link">Post 3</a>
           </li>
         </ul>
+      </div>
       </div>
     </div>
     <div className="center-panel">
@@ -55,19 +61,13 @@ export function HomePage() {
               <span className="icon">✍</span>
               <span className="text">Comment</span>
             </div>
-            <div className="comment-input">
-              <textarea placeholder="Write a comment"></textarea>
-              <div className="post-comment">
-                <button>Post</button>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
     <div className="right-panel">
       <div className="popular-feed">
-        <h3 className="section-title">Popular Feed</h3>
+        <h1 className="section-title">Popular Feed</h1>
         <ul className="feed-list">
           <li className="feed-item">
             <a href="#" className="feed-link">Feed 1</a>
@@ -82,6 +82,8 @@ export function HomePage() {
       </div>
     </div>
   </div>
+      </div>
+
 
       </>
     );

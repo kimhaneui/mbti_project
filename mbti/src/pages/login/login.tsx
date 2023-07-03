@@ -37,7 +37,7 @@ export function LoginPage() {
           <Input type="text" id="username" placeholder="한줄소개 입력"></Input>
         </div>
         <div className="joinBtn">
-          <Button label="COME ON" backgroundColor="pink" onClick={() => navigate('/home')}></Button>
+          <Button label="COME ON" backgroundColor="#FFE2E7" onClick={() => navigate('/home')}></Button>
         </div>
        </div>
         </div>

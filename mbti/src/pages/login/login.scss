@@ -12,7 +12,7 @@
 .login-box {
     width: 500px;
     padding: 50px;
-    border: 5px solid pink;
+    border: 5px solid #FFE2E7;
     border-radius: 20px;
     display: inline-block;
     .title {
@@ -55,7 +55,9 @@
         right: 50%;
         text-align: center;
         button {
-            color: #D00096;
+          width: 160px;
+          padding: 20px;
+          color: #D00096;
         }
       }
   }
