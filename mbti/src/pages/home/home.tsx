@@ -1,40 +1,56 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "../home/home.scss"
-import { useNavigate } from "react-router-dom";
+import ProfileModal from "../../modal/profile-modal";
 
 export function HomePage() {
-    const navigate = useNavigate();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+    const edit = "../../image/edit.png"
     useEffect(() => {
    
     }, [])
     return (
       <>
+      
       <div className="container">
+      {isModalOpen && <ProfileModal closeModal={closeModal} />}
       <div className="logo">
         <img src="logo" alt="logo" />
       </div>
+      <div className="editBox">
+        <div className="textBox">
+        <img src={edit} alt="EDIT" />
+        <span>너의 엠비티아이에 대해서 알려줘 :)</span>
+        <a onClick={openModal}><img src={edit} alt="EDIT" /></a>
+        </div>
+      </div>
       <div className="facebook-feed">
     <div className="left-panel">
-      <div className="profile">
-      <div className="profile-picture">
-        <img src="profile-picture.jpg"></img>
-        <h3 className="profile-name">John Doe</h3>
-      </div>
-      <div className="popular-posts">
-        <h3 className="section-title">Popular Posts</h3>
-        <ul className="post-list">
-          <li className="post-item">
-            <a href="#" className="post-link">Post 1</a>
-          </li>
-          <li className="post-item">
-            <a href="#" className="post-link">Post 2</a>
-          </li>
-          <li className="post-item">
-            <a href="#" className="post-link">Post 3</a>
-          </li>
-        </ul>
-      </div>
-      </div>
+    <div className="profileBox">
+       <img src="./" alt="" />
+       <div className="textBox">
+        <h2>끼순이왔어</h2>
+        <span>INFJ</span>
+        <p>사람과 관련된 뛰어난 통찰력을 가지고 있는 사람들</p>
+        <img src="./" alt="" />
+       </div>
+       <ul>
+        <li>
+          <span>email@com</span>
+        </li>
+        <li>
+          <span>Introduce</span>
+          <span>안녕하세요 인어공주 입니다.</span>
+        </li>
+       </ul>
+    </div>
     </div>
     <div className="center-panel">
       <div className="post">

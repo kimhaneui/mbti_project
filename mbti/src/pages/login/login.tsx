@@ -11,7 +11,7 @@ export function LoginPage() {
     }, [])
     return (
       <>
-      <div className="container">
+      <div className="loginContainer">
         <div className="main">
         <div className="login-box">  
         <h2>프로필 사진</h2>
