@@ -23,7 +23,7 @@ export function MainPage() {
                 <span className="sm">verse</span>
             </div>
             <div className="btn">
-                <Button label="JOIN" backgroundColor="#FFE2E7" onClick={() => navigate('/login')}></Button>
+                <Button label="JOIN" backgroundColor="#FFE2E7" onClick={() => navigate('/profile')}></Button>
             </div>
         </div>
       </div>
