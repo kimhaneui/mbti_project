@@ -1,0 +1,192 @@
+// Variables
+$primary-color: #FFE2E7;
+$secondary-color: #f0f2f5;
+$border-color: #ddd;
+
+// Facebook Feed SCSS
+.container{
+  height: 100vh;
+  background-color: $primary-color;
+  .logo{
+    background-color: white;
+    height: 80px;
+  }
+  .facebook-feed {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+  .left-panel {
+    flex: 1;
+    padding-right: 50px;
+    .profile {
+      text-align: center;
+      border-radius: 20px;
+      margin-bottom: 16px;
+      background-color: white;
+      height: 500px;
+      .profile-picture {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-bottom: 8px;
+      }
+
+      .profile-name {
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+
+    .popular-posts {
+      .section-title {
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      .post-list {
+        list-style: none;
+        padding: 0;
+
+        .post-item {
+          margin-bottom: 4px;
+
+          .post-link {
+            text-decoration: none;
+            color: $primary-color;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+  .center-panel {
+    flex: 2;
+    .post {
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 16px;
+      margin-bottom: 16px;
+      height: 600px;
+      .post-header {
+        display: flex;
+        align-items: center;
+
+        .profile-picture {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin-right: 16px;
+        }
+
+        .user-info {
+          .username {
+            font-weight: bold;
+          }
+
+          .timestamp {
+            color: #777;
+            font-size: 12px;
+          }
+        }
+      }
+
+      .post-content {
+        margin-top: 16px;
+
+        .text {
+          margin-bottom: 16px;
+        }
+
+        .image {
+          max-width: 100%;
+          margin-bottom: 16px;
+        }
+
+        .video {
+          width: 100%;
+          height: auto;
+          margin-bottom: 16px;
+        }
+      }
+
+      .post-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 16px;
+
+        .likes {
+          font-size: 14px;
+          color: #777;
+        }
+        .comment-input {
+          display: block;
+          textarea {
+            width: 100%;
+            resize: vertical;
+            padding: 8px;
+            border: 1px solid $border-color;
+            border-radius: 4px;
+            margin-top: 8px;
+          }
+        }
+        .actions {
+          display: flex;
+          align-items: center;
+
+          .action {
+            display: flex;
+            align-items: center;
+            margin-right: 8px;
+
+            .icon {
+              margin-right: 4px;
+            }
+
+            .text {
+              font-size: 14px;
+              color: #777;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .right-panel {
+    flex: 1;
+    padding-left: 50px;
+    .popular-feed {
+      background-color: white;
+      border-radius: 20px;
+      height: 500px;
+      .section-title {
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      .feed-list {
+        list-style: none;
+        padding: 0;
+
+        .feed-item {
+          margin-bottom: 4px;
+
+          .feed-link {
+            text-decoration: none;
+            color: $primary-color;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+}
+
