@@ -4,6 +4,7 @@ import { Suspense } from 'react';
 import { MainPage } from './pages/main/main';
 import { LoginPage } from './pages/login/login';
 import { ProfilePage } from './pages/profile/profile';
+import { HomePage } from './pages/home/home';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Route path="/main" element={<MainPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/home" element={<HomePage />} />
           <Route path="*" element={<Navigate replace to="/main" />} />
         </Routes>
       </Suspense>
